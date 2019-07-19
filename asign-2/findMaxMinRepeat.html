@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Finding Maximum Minimun Finding Most Repeat</title>
+</head>
+<body>
+    
+    <script>
+        
+        var str=prompt("Enter the String..");
+        var arr=str.split(",");
+        var max=Math.max.apply(null,arr);
+        var min=Math.min.apply(null,arr);
+        var a=[max];
+        var rep=0,num=0;
+        for(var i=0;i<=max;i++){
+            a[i]=0;
+        }
+
+        for(var i=0;i<arr.length;i++){
+            a[arr[i]]++;
+        }
+
+        for(var i=0;i<=max;i++){
+            if(a[i]>num){
+                num=a[i];
+                rep=i;
+            }
+        }
+        document.write(str);
+        document.write("<br>");
+        document.write( "<br><Br>Max:"+ max+"<br><br>Min:"+min+"<br><br>Most Repeated Value:"+rep);
+        
+    </script>
+
+
+</body>
+</html>
