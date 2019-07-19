@@ -1,53 +1,27 @@
-
-body{
-    padding: 0;
-    margin:0;
-}
-ul{
-    padding: 0;
-    margin:0;
-}
-li{
-    list-style-type: none;
+div{
+    display: flex; 
+    justify-content: space-between;   
 }
 
-ul li img{
-    padding: 5px;
+img{
+    max-width: 30%;
 }
 
-#img-1{
-    max-width:30%;
-    float: left;
-}
-#img-2{
-    max-width:30%;
-    float:left;
-}
-#img-3{
-    max-width:30%;
-    float: left;
-}
-
-
-@media only screen and ( max-width:400px ) {
+ @media only screen and ( max-width:400px ) {
  
-    #img-1{
-        max-width:90%;
-        clear:left;
+    div{
+        display: flex; 
+        flex-direction: column;
     }
-    #img-2{
-        max-width:90%;
-        clear:left;
 
-    }
-    #img-3{
-        max-width:90%;
-        clear:left;
+    img{
+        max-width: 100%;
+        padding: 10px;
 
     }
 
 
 
-}
+} 
 
 
