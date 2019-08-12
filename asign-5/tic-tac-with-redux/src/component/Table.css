@@ -1,0 +1,22 @@
+
+.table{
+   transform:translate(40%,65%)
+}
+
+.table table,tr,td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+
+.table table{
+    width: 250px;
+    height:250px;
+}
+
+.table table tr td{
+    width:250px;
+    height:inherit;
+    text-align: center;
+
+}
